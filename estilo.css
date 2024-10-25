@@ -1,15 +1,97 @@
-body{
-    background-color: pink;
+/* Reset básico para evitar inconsistências */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-div{
+/* Estilo do corpo */
+body {
+    background: linear-gradient(135deg, #1e90ff, #00bfff);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
     flex-direction: column;
-    padding-top: 150px;
+    justify-content: space-between;
+}
+
+/* Cabeçalho e navegação */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Estilo do container */
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0;
 }
 
-div img{
-    height: 300px;
+/* Card da imagem e botão */
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    font-size: 14px;
 }
